@@ -30,6 +30,7 @@ if(MAKE_SCENE)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DMAKE_SCENE=1")
 	find_package(GLEW REQUIRED)
 	include_directories(${GLEW_INCLUDE_DIRS})
+	link_libraries(${GLEW_LIBRARIES})
 
 	find_package(GLUT REQUIRED)
 	include_directories(${GLUT_INCLUDE_DIRS})
